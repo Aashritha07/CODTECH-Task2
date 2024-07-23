@@ -1,0 +1,110 @@
+.loginsignup {
+    width: 100%;
+    min-height: 100vh; 
+    background: #fce3fc;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.loginsignup-container {
+    width: 90%; 
+    max-width: 450px; 
+    background: white;
+    padding: 40px 60px;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.loginsignup-container h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.field input {
+    height: 48px;
+    width: 400px;
+    padding: 0 20px; 
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.loginsignup-container button {
+    width: 440px;
+    height: 50px;
+    color: white;
+    background: #e74219;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginsignup-login {
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.loginsignup-login span {
+    color: #e74219;
+    font-weight: 600;
+}
+
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+
+@media (max-width: 480px) {
+    .loginsignup-container {
+        padding: 30px; 
+    }
+
+    .loginsignup-container h1 {
+        font-size: 20px; 
+    }
+
+    .loginsignup-container button {
+        font-size: 20px; 
+    }
+
+    .field input {
+        font-size: 16px; 
+    }
+
+    .loginsignup-login {
+        font-size: 16px; 
+    }
+
+    .loginsignup-agree {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .loginsignup-container {
+        padding: 20px; 
+    }
+
+    .loginsignup-container button {
+        font-size: 18px; 
+    }
+}

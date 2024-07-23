@@ -1,0 +1,118 @@
+.shopcategory-banner {
+   display: flex;
+   margin-top: 20px;
+   width: 85%;
+   margin-bottom: 30px;
+   padding-left: 5%;
+   padding-right: 15%;
+ }
+ 
+ .shopcategory-indexSort {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0px 140px;
+ }
+ 
+ .shopcategory-sort {
+   padding: 10px 20px;
+   border-radius: 40px;
+   border: 1px solid #888;
+ }
+ 
+ .shopcategory-indexSort p span {
+   font-weight: 600;
+ }
+ 
+ .shopcategory-products {
+   margin: 15px 90px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   row-gap: 80px;
+ }
+ 
+ 
+ @media (max-width: 1200px) {
+   .shopcategory-indexSort {
+     margin: 0px 80px; 
+   }
+   
+   .shopcategory-products {
+     margin: 15px 50px; 
+     grid-template-columns: 1fr 1fr 1fr; 
+     column-gap: 40px; 
+     row-gap: 60px; 
+   }
+ }
+ 
+ @media (max-width: 992px) {
+   .shopcategory-banner {
+     width: 90%; 
+     padding-right: 10%; 
+   }
+ 
+   .shopcategory-indexSort {
+     margin: 0px 40px; 
+   }
+ 
+   .shopcategory-products {
+     margin: 15px 30px; 
+     grid-template-columns: 1fr 1fr; 
+     column-gap: 30px; 
+     row-gap: 50px; 
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .shopcategory-banner {
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+   }
+ 
+   .shopcategory-indexSort {
+     flex-direction: column;
+     margin: 0;
+     align-items: center;
+   }
+ 
+   .shopcategory-sort {
+     margin-top: 10px;
+   }
+ 
+   .shopcategory-products {
+     margin: 15px;
+     grid-template-columns: 1fr; 
+     row-gap: 40px; 
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .shopcategory-banner {
+     width: 100%;
+     padding: 15px;
+   }
+ 
+   .shopcategory-indexSort {
+     flex-direction: column;
+     margin: 0;
+     align-items: center;
+   }
+ 
+   .shopcategory-sort {
+     margin-top: 10px;
+   }
+ 
+   .shopcategory-products {
+     margin: 15px;
+     grid-template-columns: 1fr; 
+     row-gap: 30px; 
+   }
+ }
+ 
+ @media (max-width: 320px) {
+   .shopcategory-products {
+     row-gap: 20px;
+   }
+ }
+ 
